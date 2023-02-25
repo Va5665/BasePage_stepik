@@ -18,12 +18,7 @@ class ProductPage(BasePage):
         add_to_basket_button.click()
         self.solve_quiz_and_get_code()
 
-    # from locators import LoginPageLocators
 
-    # class LoginPage(BasePage):
-    #     def should_be_register_form(self):
-    #         assert self.is_element_present(*LoginPageLocators.register_form), "Registration form is not presented"
-    #         assert True
 
     def should_be_success_message(self):
         assert self.is_element_present(*ProductPageLocators.SUCCESS_MESSAGE), "Success message is not presented"
