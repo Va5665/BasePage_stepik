@@ -1,3 +1,6 @@
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 
 
 
@@ -49,6 +52,9 @@ class ProductPage(BasePage):
     def message_disappeared_after_adding_product_to_basket(self):
         assert self.should_disappear_success_message(*ProductPageLocators.SUCCESS_MESSAGE), \
             "Success message is presented, but should not be"
+
+
+
 
 
 

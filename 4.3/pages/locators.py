@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 
 
+
 class ProductPageLocators():
     ADD_TO_BASKET_BUTTON = (By.CSS_SELECTOR, ".btn-add-to-basket")
 
@@ -19,7 +20,9 @@ class BasePageLocators():
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     BASKET_BUTTON_EN_GB = (By.LINK_TEXT, "View basket")
     BASKET_BUTTON_RU = (By.LINK_TEXT, "Посмотреть корзину")
-    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+    USER_ICON = (By.CSS_SELECTOR, "#default")
+    REGISTRATION_SUCCESS_MESSAGE = (By.CSS_SELECTOR, "#default")
+
 class MainPageLocators():
     MAIN_PAGE_LINK = "http://selenium1py.pythonanywhere.com/en-gb/"
     LOGIN_LINK = (By.ID, "login_link")
@@ -29,5 +32,16 @@ class BasketPageLocators():
     BASKET_NOT_EMPTY = (By.CLASS_NAME, "basket-title")
     SUBSTRING_BASKET_EN_GB = "Your basket is empty" #"Ваша корзина пуста"
     SUBSTRING_BASKET_RU = "Ваша корзина пуста"
+
+
+class LoginPageLocators():
+    REGISTRATION_EMAIL_INPUT = (By.CSS_SELECTOR, "#id_registration-email")
+    REGISTRATION_PASSWORD_INPUT1 = (By.CSS_SELECTOR, "#id_registration-password1")
+    REGISTRATION_PASSWORD_INPUT2 = (By.CSS_SELECTOR, "#id_registration-password2")
+    REGISTRATION_SUBMIT_BUTTON = (By.CSS_SELECTOR, "button[value='Register']")
+
+
+
+
 
 
